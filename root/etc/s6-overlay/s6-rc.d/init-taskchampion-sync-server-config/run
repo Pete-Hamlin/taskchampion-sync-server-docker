@@ -1,0 +1,14 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+# copy config
+cp -n /defaults/taskchampion-sync-server.sh /config/taskchampion-sync-server.sh
+
+chmod +x /config/taskchampion-sync-server.sh
+
+if [[ -z ${LSIO_NON_ROOT_USER} ]]; then
+    # permissions
+    lsiown -R abc:abc \
+        /config \
+        /data
+fi

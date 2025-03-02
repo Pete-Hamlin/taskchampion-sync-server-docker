@@ -1,0 +1,13 @@
+services:
+  taskchampion:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - "./data:/data"
+    environment:
+      - RUST_LOG=debug
+      - UID=1000
+      - GID=1000
+      - TZ=Etc/UTC
+      - DATA_DIR=/data
+      - LISTEN=0.0.0.0:8080
