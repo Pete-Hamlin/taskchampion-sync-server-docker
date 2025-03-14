@@ -2,7 +2,7 @@
 
 This is an alternative basic docker setup for the [taskchampion-sync-server](https://github.com/GothenburgBitFactory/taskchampion-sync-server)
 
-Based of the [linuxserver.io base image]() (actually using the beets image as a template, as docs on how to setup the base image correctly are a little thin), as it has some pretty awesome boilerplate setup for running binaries in docker out of the box.
+Based of the [linuxserver.io base image](https://github.com/linuxserver/docker-baseimage-alpine) (actually using the beets image as a template, as docs on how to setup the base image correctly are a little thin), as it has some pretty awesome boilerplate setup for running binaries in docker out of the box.
 
 ## Why Use this?
 
@@ -32,3 +32,7 @@ services:
       - DATA_DIR=/data
       - LISTEN=0.0.0.0:8080
 ```
+
+## References
+
+1. [https://docs.linuxserver.io/general/container-branding/]
