@@ -33,6 +33,17 @@ services:
       - LISTEN=0.0.0.0:8080
 ```
 
+## env Vars
+
+Supports all `ENV_VARS` specified in the main repo.
+Also supports the following utility vars:
+
+| Var   | Description                       | Example   |
+| ----- | --------------------------------- | --------- |
+| `TZ`  | Sets timezone info                | `Etc/UTC` |
+| `UID` | Sets user ID to run container as  | `1000`    |
+| `GID` | Sets group ID to run container as | `1000`    |
+
 ## References
 
 1. [https://docs.linuxserver.io/general/container-branding/]
